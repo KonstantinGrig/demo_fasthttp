@@ -1,12 +1,17 @@
 package main
 
 import (
-	"github.com/valyala/fasthttp"
 	"fmt"
+	"github.com/valyala/fasthttp"
+	"os"
 )
 
 func main() {
-	fasthttp.ListenAndServe(":8587", fastHTTPHandler)
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "8587"
+	}
+	fasthttp.ListenAndServe(":"+port, fastHTTPHandler)
 }
 
 func fastHTTPHandler(ctx *fasthttp.RequestCtx) {
