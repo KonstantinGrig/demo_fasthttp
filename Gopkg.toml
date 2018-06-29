@@ -37,3 +37,4 @@
   root-package = "github.com/KonstantinGrig/demo_fasthttp"
   go-version = "go1.10.3"
   install = [ "./..." ]
+
