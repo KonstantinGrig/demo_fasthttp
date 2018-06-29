@@ -1,2 +1,3 @@
-# demo_fasthttp
-Demo fasthttp on Go
+# Demo fasthttp on Go
+
+git clone https://github.com/KonstantinGrig/demo_fasthttp.git
