@@ -35,5 +35,3 @@
 
 [metadata.heroku]
   root-package = "github.com/KonstantinGrig/demo_fasthttp"
-  go-version = "go1.10.0"
-  install = [ "./..." ]
